@@ -26,6 +26,7 @@ function serverBootPlugin() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [serverBootPlugin(), vue(), vueDevTools()],
+  base: "/movie-map-test/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -36,5 +37,4 @@ export default defineConfig({
       ignored: ["**/tmp-chrome-profile/**"],
     },
   },
-  base: "/movie-map-test/",
 });
