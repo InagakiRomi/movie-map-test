@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --outDir docs",
+    "preview": "vite preview --outDir docs"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
